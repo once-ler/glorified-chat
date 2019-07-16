@@ -18,16 +18,22 @@ Finally, ```Webpack``` is used as the bundler.
 * [yarn](https://yarnpkg.com/lang/en/docs/install/#debian-stable) package manager
 
 ### Installation
-1.  Go to the client folder.
-    ```/path/to/glorified-chat/client```
-<br>
-2.  Download all dependencies by using the command.
-    ```yarn```
-<br>
-3.  Bundle for __quick and dirty__ release with the command.
-    ```npm run build:quick```
+*  Go to the client folder.
+   ```
+   /path/to/glorified-chat/client
+   ```
 
-    As of this release, running the command ```npm run build``` will fail because linting and flow check have not been fully implemented.
+*  Download all dependencies by using the command.
+   ```
+   yarn
+   ```
+
+*  Bundle for __quick and dirty__ release with the command.
+   ```
+   npm run build:quick
+   ```
+
+  As of this release, running the command ```npm run build``` will fail because linting and flow check have not been fully implemented.
 
 ### Development
 Start in development mode ```without``` redux devtools

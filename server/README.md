@@ -20,22 +20,35 @@ The ```Source.actorRef``` creates an actor when the user connects and this actor
 
 ### Installation
 
-1.  Go to the server folder.
-    ```/path/to/glorified-chat/server```
-<br>
-2.  Build the server with the following command.  All dependencies will be downloaded.
-    ```sbt "project http" assembly```
+*  Go to the server folder.
+    ```
+    /path/to/glorified-chat/server
+    ```
+
+*  Build the server with the following command.  All dependencies will be downloaded.
+    ```
+    sbt "project http" assembly
+    ```
     
-    The ```sbt-assembly``` plugin will place the ```jar``` file in ```/path/to/glorified-chat/server/http/target/scala-2.12/glorified-chat-server-0.2.5.jar```.
-<br>
-3.  Run the server with the command.
-    ```java -jar glorified-chat-server-0.2.5.jar```
-<br>    
+    The ```sbt-assembly``` plugin will place the ```jar``` file in 
+    ```
+    /path/to/glorified-chat/server/http/target/scala-2.12/glorified-chat-server-0.2.5.jar
+    ```
+
+*  Run the server with the command.
+    ```
+    java -jar glorified-chat-server-0.2.5.jar
+    ```
+    
     To set minimum or maximum heap allowed, add the options with the command.
-    ```java -Xms1G -Xmx3G -jar glorified-chat-server-0.2.5.jar```
-<br>    
+    ```
+    java -Xms1G -Xmx3G -jar glorified-chat-server-0.2.5.jar
+    ```
+    
     The default port is ```9001```.  To use a different port pass the environment variable ```SERVER_PORT``` to the command.
-    ```SERVER_PORT=8080 java -jar glorified-chat-server-0.2.5.jar``` 
+    ```
+    SERVER_PORT=8080 java -jar glorified-chat-server-0.2.5.jar
+    ``` 
     
 ### Running tests
 Run tests for the web server with the following.
